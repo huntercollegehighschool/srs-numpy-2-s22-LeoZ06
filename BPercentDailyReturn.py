@@ -12,4 +12,5 @@ acme = [10, 11.5, 11, 10, 12]
 prices = np.array(acme)
 current_price = prices[1: 5]
 previous_price = prices[0: 4]
-difference = current_price - previous_price
+percent_daily_return = 100 * (current_price - previous_price) / previous_price
+print(percent_daily_return)
